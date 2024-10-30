@@ -72,7 +72,15 @@ public class Labor
     
     public void setStock(int stock)
     {
+    if ((stock >= 0) && (stock <= 20))
+    {
         this.stock = stock;
+    }
+    else 
+    {
+        System.out.println("fehler. Stock muss zweischen 0 und 20 sein.");
+        this.stock = 5;
+    }
     }
     
     public void setBeamer(boolean beamer)
