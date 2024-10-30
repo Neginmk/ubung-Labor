@@ -110,12 +110,26 @@ public class Labor
         return anzZimmer;
     }
     
-    public String getInitialen()
+    public String getZimmerNummer()
     {
-        String initielalen;
+        String zimmerNummer;
         
-        initielalen= raum.substring (5);
+        zimmerNummer= raum.substring (5);
         
-        return initielalen;
+        return zimmerNummer;
     }
+    
+    public String getStockNummer()
+    {
+        String stockNummer;
+        
+        
+        stockNummer = raum.substring(2,4) ;
+        
+        return stockNummer;
+        
+    }
+    
+    //print
+    
 }
