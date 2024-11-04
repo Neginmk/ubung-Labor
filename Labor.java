@@ -127,17 +127,19 @@ public class Labor
         return zimmerNummer;
     }
     
-    public String getStockNummer()
+    public String getLaborstock()
     {
-        String stockNummer;
-        
-        
-        stockNummer = raum.substring(2,4) ;
-        
-        return stockNummer;
-        
+        String stock;
+        int pos1;
+        int pos2;
+
+        pos1 = raum.indexOf(".")+1;
+        pos2 = raum.indexOf(".",pos1);
+        stock = raum.substring(pos1,pos2);
+
+        return stock;
     }
     
-    //print
+    
     
 }
